@@ -8,7 +8,7 @@ const SHOP = {
   // Basic Info
   name: "CALA Coffee Roasters",
   tagline: "Somos una nueva experiencia en café, te esperamos.",
-  logoImage: "https://i.imgur.com/sUBrS40.png", // URL to your logo image - leave empty to use logoText instead
+  logoImage: "assets/images/logo.png", // Path in assets/images/ — leave empty to use logoText instead
   logoText: "CALA", // Used if no logo image is provided
   
   // Colors - These will be applied site-wide via CSS custom properties
@@ -27,7 +27,7 @@ const SHOP = {
   
   // Hero Section
   hero: {
-    image: "https://i.imgur.com/j2cL5NI.jpg",
+    image: "assets/images/hero.jpg",
     headline: "Café de especialidad en Comayagua",
     subheadline: "Una nueva experiencia en café",
     ctaText: "Ver Menú",
@@ -38,7 +38,7 @@ const SHOP = {
   about: {
     title: "Nuestra Historia",
     text: "CALA Coffee Roasters es una nueva experiencia en café en el corazón de Comayagua. Nos especializamos en café de especialidad, tostado con pasión y servido con dedicación. Somos más que una cafetería, somos un espacio donde la comunidad se encuentra y cada visita es especial.",
-    image: "https://i.imgur.com/aDDhqAW.jpg"
+    image: "assets/images/about.jpg"
   },
   
   // Menu - Organized by category
@@ -78,14 +78,14 @@ const SHOP = {
     }
   ],
   
-  // Gallery - Image URLs
+  // Gallery - Paths in assets/images/
   gallery: [
-    "https://i.imgur.com/sV9Ovev.jpg",
-    "https://i.imgur.com/aDDhqAW.jpg",
-    "https://i.imgur.com/zQF0BSy.jpg",
-    "https://i.imgur.com/qIt5miW.jpg",
-    "https://i.imgur.com/J1aQOiD.jpg",
-    "https://i.imgur.com/NizDZl1.jpg"
+    "assets/images/gallery-1.jpg",
+    "assets/images/about.jpg",
+    "assets/images/gallery-2.jpg",
+    "assets/images/gallery-3.jpg",
+    "assets/images/gallery-4.jpg",
+    "assets/images/gallery-5.jpg"
   ],
   
   // Hours
