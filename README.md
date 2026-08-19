@@ -16,6 +16,8 @@ A complete, production-ready single-page website template for coffee shops. Buil
 
 ```
 coffee-shop-template/
+├── assets/
+│   └── images/      # ⭐ Put all site photos here (logo, hero, gallery, etc.)
 ├── index.html       # Main HTML structure
 ├── styles.css       # All styling (mobile-first, responsive)
 ├── script.js        # Vanilla JavaScript for interactivity
@@ -74,20 +76,28 @@ Choose from [Google Fonts](https://fonts.google.com). Popular pairings:
 
 ### Step 5: Replace Images
 
-Find high-quality, free images on [Unsplash](https://unsplash.com) or use client-provided photos.
+Add your photos to the `assets/images/` folder, then point to them in `config.js`:
+
+| File | Suggested name | Used for |
+|------|----------------|----------|
+| Logo | `logo.png` | Navbar + hero logo |
+| Hero background | `hero.jpg` | Top banner |
+| About photo | `about.jpg` | About section |
+| Gallery | `gallery-1.jpg`, `gallery-2.jpg`, … | Gallery grid |
 
 ```javascript
+logoImage: "assets/images/logo.png",
 hero: {
-  image: "YOUR_IMAGE_URL_HERE",
+  image: "assets/images/hero.jpg",
   // ...
 },
 about: {
   // ...
-  image: "YOUR_IMAGE_URL_HERE"
+  image: "assets/images/about.jpg"
 },
 gallery: [
-  "IMAGE_1_URL",
-  "IMAGE_2_URL",
+  "assets/images/gallery-1.jpg",
+  "assets/images/gallery-2.jpg",
   // Add as many as you want
 ]
 ```
@@ -96,6 +106,7 @@ gallery: [
 - Hero image: 1920x1080px or larger, landscape orientation
 - About image: 800x600px or similar
 - Gallery images: Square or landscape, consistent aspect ratios look best
+- You can also use external URLs instead of local paths if you prefer
 
 ### Step 6: Update Content
 
@@ -212,8 +223,9 @@ Edit `index.html` and reorder the `<section>` elements. Each section is clearly 
 ## 🐛 Troubleshooting
 
 **Images not showing?**
-- Check that URLs are correct and publicly accessible
-- For local images, place them in an `images/` folder and use relative paths like `images/hero.jpg`
+- Check that file paths in `config.js` match the files in `assets/images/`
+- Use paths like `assets/images/hero.jpg` (relative to the site root)
+- File names are case-sensitive on most hosts
 
 **Fonts not loading?**
 - Ensure font names match exactly from Google Fonts
